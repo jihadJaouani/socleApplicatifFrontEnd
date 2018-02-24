@@ -1,0 +1,15 @@
+<h1>Gestion des Enseignants</h1>
+
+<button class="w3-button w3-dark-grey"><a href="#creerEnseignant">Creer Enseignant <i class="fa fa-plus-square"></i></a></button>
+<br>
+<br>
+ <table class="w3-table w3-striped w3-white">
+<tr ng-repeat="enseignant in enseignants">
+	<td>{{enseignant.nom}} {{enseignant.prenom}}<td>
+	
+		<td><button class="w3-button w3-green"><a href="#plusEnseignant/{{enseignant.noEnseignant}}">Details <i class="fa fa-info-circle"></i></a> </button></td>
+		<td><button class="w3-button w3-orange"><a href="#modifierEnseignant/{{enseignant.noEnseignant}}">modifier <i class="fa fa-edit"></i></a> </button></td>
+		<td><button ng-click="supprimer(enseignant.noEnseignant)" class="w3-button w3-red"> supprimer <i class="fa fa-trash"></i></button></td>
+		
+</tr>
+</table>

@@ -1,0 +1,37 @@
+<h1>Creer Formation</h1>
+<form class="w3-half w3-center" ng-submit="saveFormation(formation)">
+	<table class="w3-table w3-hoverable w3-card w3-white ">
+		<tr>
+			<td>Code Formation:</td>
+			<td><input type="text" ng-model="formation.codeFormation"
+				required /></td>
+		</tr>
+		<tr>
+			<td>Debut Accreditation:</td>
+			<td><input type="date" ng-model="formation.debutAccreditation" />
+			</td>
+		</tr>
+		<tr>
+			<td>Diplome:</td>
+			<td><input type="text" ng-model="formation.diplome" /></td>
+		</tr>
+		<tr>
+			<td>Double Diplome:</td>
+			<td><input type="text" ng-model="formation.doubleDiplome" /></td>
+		</tr>
+		<tr>
+			<td>Fin Accreditation:</td>
+			<td><input type="date" ng-model="formation.finAccreditation" /></td>
+		</tr>
+		<tr>
+			<td>No Annee:</td>
+			<td><input type="number" ng-model="formation.n0Annee" /></td>
+		</tr>
+		<tr>
+			<td>NomFormation:</td>
+			<td><input type="text" ng-model="formation.nomFormation" /></td>
+		</tr>
+	</table>
+	<br>
+		<button type="submit" class="w3-button w3-green w3-xlarge">save</button>
+		</form>

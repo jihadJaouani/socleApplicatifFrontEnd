@@ -1,0 +1,33 @@
+<h1>Gestion des Formations</h1>
+
+<button class="w3-button w3-dark-grey">
+	<a href="#creerFormation">Creer Formation <i
+		class="fa fa-plus-square"></i></a>
+</button>
+<br>
+<br>
+<table class="w3-table w3-striped w3-white">
+	<tr ng-repeat=" formation in formations ">
+		<td>{{formation.codeFormation}}</td>
+
+		<td><button class="w3-button w3-green">
+				<a href="#plusformation/{{formation.codeFormation}}">Details <i
+					class="fa fa-info-circle"></i></a>
+			</button>
+		</td>
+		<td><button class="w3-button w3-orange">
+				<a href="#modifierEnseignant/{{formation.codeFormation}}">modifier
+					<i class="fa fa-edit"></i>
+				</a>
+			</button>
+		</td>
+		<td><button ng-click="supprimer(formation.codeFormation)" class="w3-button w3-red">
+				supprimer<i class="fa fa-trash"></i>
+			</button>
+		</td>
+	</tr>
+</table>
+
+
+
+

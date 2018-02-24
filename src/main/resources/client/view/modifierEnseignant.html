@@ -1,0 +1,79 @@
+<h1>Modifier Enseignant</h1>
+<form ng-submit="modifierEnseignant()" class="w3-half w3-center">
+<table class="w3-table w3-card w3-white w3-hoverable">
+<tr>	<label><td>Code enseignant: </td>
+			<td><input type="number" ng-model="enseignant.noEnseignant" required disabled/></td>
+	</label>
+</tr>
+<tr>
+	<label>
+	<td>Nom:</td>
+	<td>
+		<input type="text" ng-model="enseignant.nom" disabled/>
+	</td> 
+
+	</label>
+</tr>
+<tr>
+	<label><td>Prenom:</td>
+		<td><input type="text" ng-model="enseignant.prenom" disabled/></td>
+	</label>
+</tr>
+<tr>
+	<label><td>Sexe:</td>
+	<td>
+		<input type="text"	ng-model="enseignant.sexe" disabled /></td>
+
+	</label>
+</tr>
+<tr>
+	<label><td>Email Personnel:</td><td>
+		<input type="text" ng-model="enseignant.emailPerso" /></td>
+	</label>
+</tr>
+<tr> 
+	<label><td>Email UBO: </td>
+		<td><input type="text"ng-model="enseignant.emailUbo" /></td>
+	</label>
+</tr>
+<tr>
+	<label><td>Tel mobile </td>
+	<td>
+		<input type="text"ng-model="enseignant.mobile" /></td>
+	</label>
+</tr>
+<tr>
+	<label><td>Telephone:</td><td>
+		<input type="text" ng-model="enseignant.telephone" /></td>
+	</label>
+</tr>
+<tr>
+	<label><td>Type:</td>
+		<td><input	type="text" ng-model="enseignant.type" /></td>
+	</label>
+</tr>
+<tr>
+	<label><td>Adresse:</td>
+		<td><input type="text" ng-model="enseignant.adresse" /></td>
+	</label>
+</tr>
+<tr>
+	
+	<label><td>Ville:</td>
+		<td><input type="text" ng-model="enseignant.ville" /></td>
+	</label>
+</tr>
+<tr>
+	<label><td>Code Postal: </td>
+		<td><input type="text" ng-model="enseignant.codePostal"  /></td>
+	</label>
+</tr>
+<tr>
+	<label><td>pays:</td>
+		<td><input type="text"ng-model="enseignant.pays" /></td>
+	</label> 
+</tr>
+</table>
+<br>
+<center>	<button type="submit" class="w3-button w3-orange w3-xlarge">Modifier</button></center>
+</form>
